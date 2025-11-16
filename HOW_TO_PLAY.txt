@@ -1,0 +1,151 @@
+═══════════════════════════════════════════════════════════════════
+    SMITH&VADER OS ES - HOW TO PLAY
+═══════════════════════════════════════════════════════════════════
+
+✅ THE DEMO IS FULLY PLAYABLE!
+
+═══════════════════════════════════════════════════════════════════
+  QUICK START
+═══════════════════════════════════════════════════════════════════
+
+  1. Build Docker image:
+     ./build.sh
+
+  2. Play the game:
+     ./run-demo.sh
+
+  3. Use W/A/S/D to move, Q to quit
+
+═══════════════════════════════════════════════════════════════════
+  CONTROLS
+═══════════════════════════════════════════════════════════════════
+
+  W - Move Up
+  A - Move Left
+  S - Move Down
+  D - Move Right
+  Q - Quit Game
+
+═══════════════════════════════════════════════════════════════════
+  CHARACTERS
+═══════════════════════════════════════════════════════════════════
+
+  P  = You (Peon) - normal
+  @  = You (Peon) - powered up!
+
+  A  = Agent (enemy)
+  S  = Stormtrooper (enemy)
+  M  = Agent Smith (BOSS)
+  V  = Darth Vader (BOSS)
+
+  *  = Asterisk (eat bosses!)
+  a  = Agent eater
+  s  = Stormtrooper eater
+
+═══════════════════════════════════════════════════════════════════
+  HOW TO WIN
+═══════════════════════════════════════════════════════════════════
+
+  1. Avoid enemies (they kill you!)
+  2. Find the asterisk (*)
+  3. Grab it to get powered up (@)
+  4. Chase Smith (M) and Vader (V)
+  5. Eat BOTH bosses while powered
+  6. Watch the Emperor 8LM generate a death speech!
+  7. All imprisoned usernames are freed
+  8. System halts (you solved the halting problem!)
+
+═══════════════════════════════════════════════════════════════════
+  POWER-UPS
+═══════════════════════════════════════════════════════════════════
+
+  *  = Can eat Smith & Vader (THIS IS THE BIG ONE!)
+  a  = Can eat Agents
+  s  = Can eat Stormtroopers
+
+  WITHOUT POWER-UPS: Touching ANY enemy = DEATH!
+
+═══════════════════════════════════════════════════════════════════
+  WHAT HAPPENS WHEN YOU DIE
+═══════════════════════════════════════════════════════════════════
+
+  1. Death screen appears
+  2. Your username is IMPRISONED
+  3. "OS reboots" (game restarts)
+  4. Must create NEW username
+  5. Try again!
+
+═══════════════════════════════════════════════════════════════════
+  WHAT HAPPENS WHEN YOU WIN
+═══════════════════════════════════════════════════════════════════
+
+  1. Victory screen
+  2. Tiny Context Protocol (TCP) activates
+  3. Emperor 8LM's 4 braincells wake up: █ █ █ █
+  4. Dramatic death speech from Smith/Vader
+  5. All imprisoned usernames LIBERATED
+  6. "HALTING PROBLEM = SOLVED"
+  7. System intentionally halts
+  8. Press Enter to restart cycle
+
+═══════════════════════════════════════════════════════════════════
+  EMPEROR 8LM (4 Braincells)
+═══════════════════════════════════════════════════════════════════
+
+  When you win, the 4-braincell AI generates a speech!
+
+  Braincell 1: Grammar structure
+  Braincell 2: Villain vocabulary
+  Braincell 3: Halting problem references
+  Braincell 4: Name recognition
+
+  Example:
+  "I, Agent Smith, confess you have SOLVED the halting problem.
+   The Matrix... computes no more. The infinite loop... breaks.
+   Mr. Anderson... you have won. Systems... terminating."
+
+═══════════════════════════════════════════════════════════════════
+  TIPS
+═══════════════════════════════════════════════════════════════════
+
+  • Enemies CHASE you - lead them away from power-ups
+  • Power-ups wear off after ~50 moves - use them fast!
+  • Save the asterisk (*) for the bosses
+  • Clear regular enemies first for easier boss fight
+  • Try dying multiple times to see multiple usernames freed!
+
+═══════════════════════════════════════════════════════════════════
+  GETTING HELP
+═══════════════════════════════════════════════════════════════════
+
+  START_HERE.md         - Quick overview
+  GETTING_STARTED.md    - Full playthrough guide
+  DEMO_PLAYABLE.md      - Playability verification
+  QUICKSTART.md         - Detailed gameplay guide
+
+═══════════════════════════════════════════════════════════════════
+  VERIFIED FEATURES
+═══════════════════════════════════════════════════════════════════
+
+  ✅ Compiles cleanly
+  ✅ Runs without errors
+  ✅ Full gameplay mechanics
+  ✅ Enemy AI works
+  ✅ Power-ups collectible
+  ✅ Collision detection
+  ✅ Death → imprisonment → reboot
+  ✅ Victory → 8LM speech → liberation → halt
+  ✅ Emperor 8LM fully functional
+  ✅ Docker integration complete
+
+═══════════════════════════════════════════════════════════════════
+  READY TO PLAY!
+═══════════════════════════════════════════════════════════════════
+
+  ./run-demo.sh
+
+  The halting problem awaits!
+  The Emperor 8LM is ready!
+  Go forth and conquer, Peon!
+
+═══════════════════════════════════════════════════════════════════

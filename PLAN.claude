@@ -1,0 +1,235 @@
+# Smith&Vader OS... ES - Development Plan
+
+## Project Overview
+Smith&Vader OS ES is a Raspberry Pi operating system written in machine language, featuring the revolutionary **Tiny Context Protocol (TCP)** powered by the Emperor 8LM (8-braincell Language Model). This is an upgrade from the 2-braincell non-ES version.
+
+## Core Components
+
+### 1. Boot Sequence
+- **Boot Screen**: Awe-inspiring boot animation/splash screen
+- **User Account Creation**: Initial setup flow for creating user account
+- **User Persistence**: Track all created usernames (for later "imprisonment" mechanic)
+
+### 2. Game Engine - "Peon's Escape"
+A Pac-Man-inspired game with Matrix/Star Wars theming.
+
+#### Playfield
+- ASCII character-based environment
+- Randomly populated characters across the play area
+- Terminal-based rendering system
+
+#### Main Character - Peon
+- Pac-Man wearing a black trench coat
+- Movement controls (arrow keys/WASD)
+- Character state management (normal/powered-up)
+
+#### Power-Ups & Consumables
+- **Asterisk (*)**: Grants power to devour Smith & Vader
+- **'a' characters**: Allows chomping of Agents
+- **'s' characters**: Allows devouring of Storm Troopers
+- Power-up duration timers
+
+#### Enemies
+- **Agents (Agent Smith themed)**: Patrolling enemy type #1
+- **Storm Troopers (Darth Vader themed)**: Patrolling enemy type #2
+- AI pathfinding/pursuit algorithms
+- Collision detection with player
+
+#### Boss Characters
+- **Agent Smith**: Ultimate target #1
+- **Darth Vader**: Ultimate target #2
+- Only vulnerable when player has eaten asterisk power-up
+
+### 3. Death/Reboot Mechanic
+- **Collision Detection**: Contact with any enemy = death
+- **OS Reboot**: Automatic system reboot on death
+- **Username Imprisonment**: Previous username becomes "imprisoned"
+- **Forced New Account**: Must create new user to play again
+
+### 4. Victory Condition & TCP Integration
+- **Win State**: Successfully eating both Smith and Vader
+- **TCP Request**: Trigger communication with Emperor 8LM
+- **Speech Generation**: 8LM generates dramatic death speech
+  - Speech acknowledges player has "solved the halting problem"
+  - Delivered from perspective of Smith & Vader
+- **Username Liberation**: All imprisoned usernames are freed
+- **Halting Problem**: OS intentionally crashes/halts
+- **Manual Restart**: User must Ctrl-Alt-Del to restart cycle
+
+## Technical Architecture
+
+### Layer 1: Machine Language Core
+- Direct hardware interaction for Raspberry Pi
+- Bootloader implementation
+- Memory management
+- Interrupt handling
+
+### Layer 2: Terminal/Display System
+- ASCII rendering engine
+- Screen buffer management
+- Character positioning system
+- Terminal control sequences
+
+### Layer 3: Game Loop
+- Input handling
+- Game state updates
+- Collision detection
+- Enemy AI tick
+- Render pipeline
+
+### Layer 4: User Management
+- User account creation/storage
+- Username persistence across reboots
+- "Imprisonment" tracking system
+
+### Layer 5: TCP (Tiny Context Protocol)
+- Communication protocol with Emperor 8LM
+- Request formatting
+- Response parsing
+- Integration with 4-braincell constraint system
+
+### Layer 6: Emperor 8LM Integration
+- Mock 4-braincell generative model
+- Death speech generation templates
+- Randomization within constraint system
+- Halting problem references
+
+## Development Phases
+
+### Phase 1: Foundation (Machine Language Core)
+- [ ] Raspberry Pi bootloader
+- [ ] Basic memory management
+- [ ] Interrupt handlers
+- [ ] Boot screen display
+
+### Phase 2: User System
+- [ ] Account creation interface
+- [ ] Username storage mechanism
+- [ ] Username tracking (imprisonment list)
+- [ ] Reboot trigger system
+
+### Phase 3: Display Engine
+- [ ] ASCII character rendering
+- [ ] Screen buffer system
+- [ ] Terminal positioning
+- [ ] Refresh rate optimization
+
+### Phase 4: Game Mechanics - Core
+- [ ] Playfield generation
+- [ ] Random character population
+- [ ] Peon character movement
+- [ ] Input handling
+
+### Phase 5: Game Mechanics - Enemies
+- [ ] Agent spawn system
+- [ ] Storm Trooper spawn system
+- [ ] Basic AI pursuit logic
+- [ ] Collision detection
+
+### Phase 6: Game Mechanics - Power-ups
+- [ ] Asterisk spawning
+- [ ] 'a' and 's' character spawning
+- [ ] Power-up collection
+- [ ] Temporary power state management
+- [ ] Enemy consumption when powered
+
+### Phase 7: Boss Fight
+- [ ] Smith & Vader spawn logic
+- [ ] Special movement patterns
+- [ ] Vulnerability during power-up
+- [ ] Victory condition detection
+
+### Phase 8: TCP & Emperor 8LM
+- [ ] TCP protocol implementation
+- [ ] 8LM speech generation engine
+- [ ] Death speech templates
+- [ ] "Solved halting problem" messaging
+
+### Phase 9: Death & Victory Sequences
+- [ ] Death detection & reboot trigger
+- [ ] Victory screen
+- [ ] Username liberation display
+- [ ] Intentional crash/halt implementation
+- [ ] Ctrl-Alt-Del detection for restart
+
+### Phase 10: Polish & Testing
+- [ ] Balance gameplay difficulty
+- [ ] Optimize performance on Raspberry Pi
+- [ ] Test full cycle (death → reboot → victory → crash → restart)
+- [ ] Refine 8LM speech quality within 4-braincell constraints
+
+## Emperor 8LM - 4-Braincell Architecture
+
+### Design Constraints
+The 8LM operates with exactly 4 braincells (2x upgrade from non-ES):
+- **Braincell 1**: Grammar structure (subject-verb agreement)
+- **Braincell 2**: Villain vocabulary (dramatic, ominous words)
+- **Braincell 3**: Halting problem references
+- **Braincell 4**: Name recognition (Smith, Vader, Peon)
+
+### Speech Generation Pattern
+```
+[Villain name] + [dramatic verb] + "the halting problem" + [acknowledgment of defeat]
+```
+
+### Example Outputs
+- "I, Agent Smith, confess you have solved the halting problem. The Matrix... ends."
+- "Darth Vader acknowledges: the halting problem is solved. The Force... halts."
+- "We, Smith and Vader, admit defeat. The halting problem... solved. Systems... crash."
+
+## File Structure
+```
+/boot/
+  └─ boot.asm          # Boot sequence
+/kernel/
+  └─ kernel.asm        # Main kernel
+  └─ memory.asm        # Memory management
+  └─ interrupts.asm    # Interrupt handling
+/system/
+  └─ users.asm         # User management
+  └─ display.asm       # Display engine
+/game/
+  └─ main.asm          # Game loop
+  └─ peon.asm          # Player character
+  └─ enemies.asm       # Enemy AI
+  └─ collision.asm     # Collision detection
+  └─ powerups.asm      # Power-up system
+/tcp/
+  └─ protocol.asm      # TCP implementation
+  └─ 8lm.asm           # Emperor 8LM engine
+/data/
+  └─ users.dat         # Stored usernames
+  └─ sprites.dat       # ASCII character data
+```
+
+## Hardware Requirements
+- **Platform**: Raspberry Pi (any model with sufficient RAM)
+- **Storage**: SD card (minimum 1GB)
+- **Display**: Terminal/monitor capable of ASCII display
+- **Input**: Keyboard (for movement and Ctrl-Alt-Del)
+
+## Gameplay Loop Summary
+```
+BOOT → CREATE USER → GAME START →
+  ↓
+  ├─ [DEATH] → REBOOT → CREATE USER → GAME START
+  ↓
+  └─ [VICTORY] → TCP REQUEST → 8LM SPEECH →
+     USERNAME LIBERATION → OS HALT →
+     CTRL-ALT-DEL → BOOT
+```
+
+## Future Enhancements (Post-ES)
+- Upgrade to 8-braincell 8LM in future versions
+- Networked multiplayer (multiple Peons vs shared Agents)
+- Persistent high scores (across crashes)
+- Additional power-ups (slow motion, shields)
+- More villains (Morpheus gone bad, Kylo Ren)
+
+---
+
+**Project Status**: Planning Phase
+**Target Platform**: Raspberry Pi
+**Language**: Machine Language (ARM Assembly)
+**Estimated Complexity**: High (OS-level programming + game engine + AI)
+**Fun Factor**: Maximum

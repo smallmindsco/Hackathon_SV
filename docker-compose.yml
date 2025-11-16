@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  smithvader-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: smithvader-os-es:latest
+    container_name: smithvader-build
+    volumes:
+      - .:/smithvader
+    working_dir: /smithvader
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+
+  smithvader-demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: smithvader-os-es:latest
+    container_name: smithvader-demo
+    volumes:
+      - .:/smithvader
+    working_dir: /smithvader/demo
+    stdin_open: true
+    tty: true
+    command: bash -c "make clean && make && ./demo"
