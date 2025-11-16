@@ -1,0 +1,36 @@
+# Smith&Vader OS ES - Sprite/Character Data
+# ASCII character definitions
+
+# Player Character
+PEON_NORMAL=P
+PEON_POWERED=@
+
+# Enemies
+AGENT=A
+STORMTROOPER=S
+
+# Bosses
+SMITH=M
+VADER=V
+
+# Power-ups
+ASTERISK=*
+AGENT_EATER=a
+STORM_EATER=s
+
+# Environment
+EMPTY_SPACE=
+WALL=#
+
+# Status Indicators
+ALIVE=█
+DEAD=☠
+IMPRISONED=⛓
+
+# UI Elements
+BORDER_HORIZONTAL=─
+BORDER_VERTICAL=│
+BORDER_TL=┌
+BORDER_TR=┐
+BORDER_BL=└
+BORDER_BR=┘
