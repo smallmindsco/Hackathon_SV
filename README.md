@@ -1,6 +1,8 @@
 # NOTE
 This was created for the 2025 Practical Data Hackathon. The goal was to create an app that nobody asked for. To wit, this was hatched. Untested on an actual pi, only the c "demo" has been found functional. This is meant to be very sloppy AI slop, and it delivers. The number of markdown files alone is obscene. Way too many emojis. The fact that it runs at all (well... The demo, anyways) is nothing short of a miracle. Yay miracles!
 
+https://www.youtube.com/watch?v=aNwIuJUAOQ8
+
 # smith & vader manifesto
 
 I have journeyed south on the street they call state. Through the Bella Monte wilderness until I arrived at the last maverick in the valley, perched at the point of the mountain. I entered, feeling my way to the great oracle Dr Pepper who sits atop Mt Dew. And there I was granted this vision, and my inner eye beheld: Smith&Vader OS... ES
